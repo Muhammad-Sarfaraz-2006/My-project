@@ -164,7 +164,7 @@ a {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: url("/images/main.jpg") center center / cover no-repeat;
+    background: url("images/main-big-image.jpg") center center / cover no-repeat;
 }
 
 .hero-content {
@@ -499,19 +499,19 @@ h2 {
 }
 
 .facility.science {
-    background-image: url("/images/computer.jpg");
+    background-image: url("images/computer.jpg");
 }
 
 .facility.library {
-    background-image: url("/images/imagelll.jpg");
+    background-image: url("images/imagelll.jpg");
 }
 
 .facility.sports {
-    background-image: url("/images/spoart3.jpg");
+    background-image: url("images/spoart3.jpg");
 }
 
 .facility.arts {
-    background-image: url("/images/point.jpg");
+    background-image: url("images/point.jpg");
 }
 
 .facility b {
@@ -1135,5 +1135,162 @@ footer {
         width: calc(100% - 20px);
         margin-top: -30px;
         padding: 15px 17px;
+    }
+}
+/* ================= SCHOOL TIMING ================= */
+
+.school-timing {
+    width: 100%;
+    padding: 80px 20px;
+    background: #f5f7fb;
+}
+
+.timing-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.timing-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.timing-heading span {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #d4a017;
+    margin-bottom: 10px;
+}
+
+.timing-heading h2 {
+    margin: 0;
+    font-size: 38px;
+    color: #14213d;
+}
+
+.timing-heading p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Timing Box */
+
+.timing-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+    border: 1px solid #e8e8e8;
+}
+
+/* Rows */
+
+.timing-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 25px;
+    border-bottom: 1px solid #eeeeee;
+    transition: 0.3s ease;
+}
+
+.timing-row:last-child {
+    border-bottom: none;
+}
+
+.timing-row:hover {
+    background: #f8f9fc;
+    transform: translateX(5px);
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.day i {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2f7;
+    border-radius: 50%;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.day span {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+}
+
+.timing-row strong {
+    font-size: 16px;
+    color: #14213d;
+    white-space: nowrap;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+    .school-timing {
+        padding: 55px 15px;
+    }
+
+    .timing-heading h2 {
+        font-size: 30px;
+    }
+
+    .timing-heading p {
+        font-size: 14px;
+    }
+
+    .timing-box {
+        padding: 8px;
+        border-radius: 15px;
+    }
+
+    .timing-row {
+        padding: 18px 12px;
+        gap: 10px;
+    }
+
+    .day {
+        gap: 10px;
+    }
+
+    .day i {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .day span {
+        font-size: 14px;
+    }
+
+    .timing-row strong {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .timing-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .timing-row strong {
+        margin-left: 48px;
     }
 }
