@@ -30,7 +30,7 @@ a {
 ========================= */
 
 .topbar {
-    background: #102c36;
+    background: #3b525a;
     color: #dce9e9;
     font-size: 13px;
 }
@@ -86,8 +86,8 @@ a {
 .logo {
     width: 45px;
     height: 45px;
-    border-radius: 13px;
-    background: #fc2828;
+    border-radius: 50%;
+    background: #e6dbdb;
     color: #fff;
     display: grid;
     place-items: center;
@@ -99,7 +99,7 @@ a {
 .logo img {
     width: 45px;
     height: 45px;
-    border-radius: 13px;
+    border-radius: 50%;
     display: block;
 }
 
@@ -1015,6 +1015,22 @@ footer {
         padding: 17px 20px;
         font-size: 13px;
     }
+   
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 600px) {
